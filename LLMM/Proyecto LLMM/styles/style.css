@@ -1,20 +1,34 @@
 @font-face {
     font-family: 'Ubuntu-Medium';
-    src: url(/resources/fonts/Ubuntu-Medium.ttf) format('truetype');
+    src: url(../resources/fonts/Ubuntu-Medium.ttf);
     font-style: normal;
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url(/resources/fonts/Ubuntu-Regular.ttf);
+    src: url(../resources/fonts/Ubuntu-Regular.ttf);
 }
 
-*{
-    font-family: Ubuntu;
-    margin: 0;
+@font-face {
+    font-family: 'Ubuntu-BoldItalic';
+    src: url(../resources/fonts/Ubuntu-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(../resources/fonts/Ubuntu-Bold.ttf);
+}
+
+* {
     height: 100%;
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ubuntu;
     text-decoration: none;
 }
 
@@ -40,6 +54,13 @@
 
 }
 
+#container-b {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0;
+}
+
 #parte-centro {
     grid-area: 3 / 2 / 5 / 5;
     background-color: white;
@@ -50,35 +71,311 @@
     background-color: #274C77;
 }
 
-#container-b {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    margin: 0;
+#pantalla-completa {
+    grid-area: 2 / 1 / 6 / 6;
+    background-color: #A3CEF1;
+}
+
+h2 {
+    font-size: 28px;
+    width: auto;
+    height: auto;
+}
+
+h3 {
+    font-size: 24px;
+    width: auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    top: 0;
+    position: sticky;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    margin-top: 5.5%;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6096BA;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.boton-contacto {
+    padding: 18% 45%;
+    border-radius: 5px;
+    background-color: #447199;
+    color: #FFFFFF;
+}
+
+.boton-contacto:hover {
+    background-color: #A3CEF1;
+    color: #274C77;
+    transition: all 0.5s;
+}
+
+.menu {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imagen-logo {
+    margin-top: 0.3%;
+    height: 59px;
+    width: 132px;
 }
 
 .parte-centro-1 {
     grid-area: 1 / 1 / 1 / 1;
-    background-color: black;
-    border: 1px solid white;
+}
+
+.imagen-centro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .parte-centro-2 {
     grid-area: 1 / 2 / 1 / 2;
-    background-color: black;
-    border: 1px solid white;
 }
 
 .parte-centro-3 {
     grid-area: 1 / 3 / 1 / 3;
-    background-color: black;
-    border: 1px solid white;
 }
 
-p{
+p {
     text-align: center;
 }
 
-.texto-1{
+.texto-1 {
     margin: 3.5% 20%;
+    font-family: 'Ubuntu-Medium';
 }
+
+.texto-1-1 {
+    color: white;
+    font-size: 18px;
+}
+
+.texto-1-2 {
+    font-size: 20px;
+}
+
+.texto-2 {
+    text-align: center;
+    padding-top: 13%;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    font-family: 'Ubuntu-Medium';
+}
+
+.caja-boton {
+    margin-top: 3%;
+    height: auto;
+    width: auto;
+}
+
+.boton-2 {
+    text-decoration: none;
+    margin: 0 45%;
+    background-color: #274C77;
+    color: #A3CEF1;
+    padding: 1%;
+    border-radius: 5px;
+    font-family: "Ubuntu-BoldItalic";
+    font-size: 22px;
+}
+
+.boton-2:hover {
+    background-color: #A3CEF1;
+    color: #274C77;
+    border: #274C77 1px solid;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+
+.contenido-footer {
+    margin-top: 1.2%;
+    text-align: center;
+    height: auto;
+}
+
+.footer-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 1%;
+}
+
+.contenedor-personal {
+    width: 70%;
+    height: auto;
+    margin: 10% auto;
+}
+
+.texto-personal {
+    padding-top: 1%;
+    width: 85%;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.imagen-personal {
+    float: left;
+    margin-right: 5%;
+    width: 434px;
+    height: 400px;
+}
+
+.ultimo-texto-personal {
+    margin-bottom: 2.5%;
+}
+
+.boton-personal {
+    display: inline;
+    text-decoration: none;
+    width: auto;
+    padding: 1%;
+    background-color: #274C77;
+    color: #A3CEF1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.boton-personal:hover {
+    background-color: #A3CEF1;
+    color: #274C77;
+    border: #274C77 1px solid;
+    transition: all 0.5s;
+}
+
+.boton-personal-2 {
+    margin-left: 2%;
+}
+
+/* Proyectos */
+
+.proyectos {
+    margin: 1% 15%;
+    height: auto;
+}
+
+.proyectos h2 {
+    margin: 1% -2%;
+}
+
+.galeria {
+    margin: 2.5% 4%;
+    height: auto;
+    float: left;
+    width: 25%;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+.pie-galeria {
+    text-align: center;
+    height: auto;
+    font-weight: bold;
+}
+
+/* Contacto */
+
+.contacto{
+    height: auto;
+}
+
+.info-contacto {
+    margin: 5% 15%;
+    margin-left: 30%;
+    height: auto;
+}
+
+.imagen-contacto {
+    margin: 2.5% 0;
+    width: 25%;
+    height: auto;
+    float: left;
+}
+
+.contacto img {
+    width: 30%;
+    height: auto;
+    margin: 5% 35%;
+}
+
+.pie-contacto {
+    text-align: center;
+    height: auto;
+    font-weight: bold;
+}
+
+/* Formulario */
+
+.formulario-contacto {
+    clear: both;
+    height: 50vh;
+    margin: 0 30.4%;
+    width: auto;
+}
+
+input{
+    margin-left: 5%;
+    border: 0;
+    background-color: #E7ECEF;
+}
+
+input::placeholder{
+    color: black;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+
+#Nombre{
+    width: 35%;
+    height: 6%;
+}
+
+#Apellidos{
+    width: 50%;
+    height: 6%;
+}
+
+#Mensaje{
+    margin-top: 2%;
+    width: 90.5%;
+    height: 30%;
+}
+
+#boton-enviar{
+    margin-top: 2%;
+    height: 6%;
+    width: 20%;
+    background-color: #274C77;
+    color: #A3CEF1;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+
+
