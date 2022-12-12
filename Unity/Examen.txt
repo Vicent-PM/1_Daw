@@ -1,0 +1,8 @@
+Crearemos una capsula y la colocamos en (0,1,0).
+La cámara la colocamos en (0,8,-10) y su rotación será: (30,0,0)
+Creamos un plano y lo escalamos a (3,3,3). El plano lo ponemos verde. Para ello creamos un material y se lo asignamos.
+
+Cosas que debe hacer la cápsula:
+1º Moverse a velocidad constante en el eje XZ a una velocidad dada por inspector (3 puntos)
+2º Estableceremos límites en los ejes XZ de forma de la siguiente forma: -X: -10, X: 15, -Z: 5, Z: 10 (4 puntos).
+3º Haz que en la capsula se mueva el triple de rápido en Z positivo, es decir, cuando va hacia el fondo. (3 puntos).
