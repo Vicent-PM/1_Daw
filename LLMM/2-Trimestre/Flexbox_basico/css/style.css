@@ -1,0 +1,38 @@
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+header{
+    display: flex;
+    background-color: darkgray;
+    height: 400px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 200px;
+    padding: 1em;
+    height: 60px;
+}
+
+main{
+    background-color: darkgrey;
+    display: flex;
+    height: 400px;
+    margin-top: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main > div{
+    background-color: sandybrown;
+    border: 1px solid black;
+    height: 20px;
+    width: 30%;
+    padding: 10px;
+}

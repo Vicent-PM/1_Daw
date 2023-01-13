@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- An invisible view aligned to the center of the parent. Allows other
+    views to be arranged on either side -->
+    <ImageView
+        android:id="@+id/centerView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tvFirstChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:text="Bohemian Rhapsody"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvSecondChild"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvFirstChild"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/centerView"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="Queen"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvThirdChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvSecondChild"
+        android:layout_toRightOf="@id/centerView"
+        android:background="#673AB7"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="5:55 min"/>
+
+    <TextView
+        android:id="@+id/tvFourthChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/centerView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_700"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="31 de octubre de 1975
+"
+        />
+
+    <TextView
+        android:id="@+id/tvFiftChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tvFourthChild"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/tvThirdChild"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:text="Opera Rock"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+</RelativeLayout>
