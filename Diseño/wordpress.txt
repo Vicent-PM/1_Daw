@@ -1,0 +1,10 @@
+BBDD
+
+Nombre: vicente_pedraza
+Usuario: Vicente
+contraseña: VpDeveloper
+
+Wordpress
+
+Usuario: SuperUser
+Contraseña: Cu!$nxxhnL5Z4Uk4vm
