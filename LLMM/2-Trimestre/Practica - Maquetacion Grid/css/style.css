@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: -50px auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 10px;
+}
+
+.container>div:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 8;
+    padding: 1%;
+    margin: auto 0px;
+    border-bottom: 2px solid darkgray;
+}
+
+.container>div:nth-child(1) h1{
+    font-weight: bold;
+    opacity: 75%;
+    font-style: italic;
+}
+
+.container>div:nth-child(2) {
+    grid-area: 2 / 1 / 6 / 2;
+}
+
+li{
+    margin-top: 20%;
+    list-style: none;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container>div:nth-child(3) {
+    grid-area: 2 / 2 / 4 / 6;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+p{
+    margin: 0 3%;
+}
+
+img{
+    margin-bottom: 2%;
+    margin-top: 15%;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.container > div:nth-child(3) img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.container>div:nth-child(4) {
+    grid-area: 2 / 6 / 4 / 8;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+.container > div:nth-child(4) img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.container>div:nth-child(5) {
+    grid-area: 4 / 6 / 6 / 8;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+.container>div:nth-child(6) {
+    grid-area: 4 / 4 / 6 / 6;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+.container>div:nth-child(7) {
+    grid-area: 4 / 2 / 6 / 4;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+.container>div:nth-child(8) {
+    grid-area: 6 / 1 / 7 / 8;
+    border: 1px solid darkgray;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.container>div:nth-child(8) .izq{
+    float: left;
+    margin-top: 20px;
+}
+
+.container>div:nth-child(8) .cen{
+    margin-top: 20px;
+}
+
+
+.container>div:nth-child(8) img{
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    margin: 0;
+    margin-left: 5px;
+    float: right;
+}
