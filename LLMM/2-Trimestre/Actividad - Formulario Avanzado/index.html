@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad - Formulario Avanzado</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Formularios</h1>
+        <form action="GET" style="border: 2px solid black; padding: 1%; border-radius: 10px;">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre*</label>
+                <input type="text" name="name" id="name" required autofocus>
+                <label for="surname">Apellidos</label>
+                <input type="text" name="surname" id="surname" placeholder="Los dos apellidos" size="30">
+                <br><br>
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" placeholder="25">
+                <label for="gender">Sexo</label>
+                <input type="radio" name="gender" id="women" checked>
+                <label for="women">Mujer</label>
+                <input type="radio" name="gender" id="men">
+                <label for="men">Hombre</label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label for="mail">Email*</label>
+                <input type="email" name="maiñ" id="mail" required>
+                <label for="address">Direccion</label>
+                <input type="text" name="address" id="address" placeholder="Calle, nº, ciudad, Provincia" size="80">
+                <br>
+                <label for="cp">Codigo Postal</label>
+                <input type="number" name="cp" id="cp">
+                <label for="city">Ciudad</label>
+                <input type="text" name="city" id="city" placeholder="Madrid">
+                <label for="state">Provincia</label>
+                <select name="state" id="state">
+                    <option value="seleccion">- selecciona -</option>
+                    <optgroup label="Comunidad de Madrid">
+                        <option value="madrid">Madrid</option>
+                    </optgroup>
+                    <optgroup label="Comunidad Valenciana">
+                        <option value="valencia">Valencia</option>
+                    </optgroup>
+                    <optgroup label="Cataluña">
+                        <option value="barcelona">Barcelona</option>
+                    </optgroup>
+                    <optgroup label="Andalucia">
+                        <option value="jaen">Jaen</option>
+                        <option value="cordoba">Cordoba</option>
+                    </optgroup>
+                </select>
+                <label for="key">Clave</label>
+                <input type="text" name="key" id="key">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Reserva</legend>
+                <label for="date">Fecha</label>
+                <input type="date" name="date" id="date">
+                <label for="time">Hora</label>
+                <input type="datetime" name="time" id="time">
+                <label for="room">Habitacion</label>
+                <select name="room" id="room">
+                    <option value="simple">Simple</option>
+                    <option value="doble">Doble</option>
+                    <option value="duplex">Duplex</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="food">Frutos secos:</label>
+                <select name="food" id="food" size="5">
+                    <option value="albaricoque">Albaricoques</option>
+                    <option value="cereza">Cerezas</option>
+                    <option value="fresa">Fresas</option>
+                    <option value="melocoton">Melocotones</option>
+                    <option value="np">No lo se</option>
+                </select>
+                <label for="drink">Refrescos</label>
+                <input type="number" name="drink" id="drink" placeholder="12">
+                <br><br>
+                Ingredientes:
+                <br>
+                <label for="pimiento">Pimiento</label>
+                <input type="checkbox" name="pimiento" id="pimiento" checked>
+                <label for="champiñon">Champiñon</label>
+                <input type="checkbox" name="champiñon" id="champiñon">
+                <label for="queso">Extra queso</label>
+                <input type="checkbox" name="queso" id="queso">
+                <br><br>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+                <br>
+                <label for="sugerencia">Sugerencias</label>
+                <br>
+                <textarea name="sugerencia" id="sugerencia" cols="100" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Varios</legend>
+                <label for="photo">Fotos</label>
+                <input type="file" name="photo" id="photo">
+                <label for="cv">Curriculum(PDF)</label>
+                <input type="file" name="cv" id="cv">
+            </fieldset>
+            <fieldset>
+                <legend>Opinion</legend>
+                <label for="rango">Opina de este formulario</label>
+                <br>
+                0
+                <input type="range" name="rango" id="rango" min="1" max="10" step="1" list="marca">
+                10
+                <datalist id="marca">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                  </datalist>
+            </fieldset>
+            <fieldset>
+                <input type="button" value="Mandar datos">
+                <input type="button" value="Borrar datos">
+                <br>
+                <input type="button" value="Yo no hago nada">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
