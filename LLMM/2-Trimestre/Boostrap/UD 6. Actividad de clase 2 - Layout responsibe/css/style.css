@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+#fila-1{
+    background-color: darkkhaki;
+    height: 200px;
+}
+
+#fila-2{
+    background-color: darkcyan;
+    height: 200px;
+}
+
+#fila-3{
+    background-color: darkgoldenrod;
+    height: 200px;
+}
+
+#fila-4{
+    background-color: darkgray;
+    height: 200px;
+}
+
+.columna{
+    background-color: lightblue;
+    margin: 10px;
+}

@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var numAlmacenado : String
     var digito1 : Float = 0F
+    var digito2 : Float = 0F
     var isSuma : Boolean = false
     var isResta : Boolean = false
     var isMult : Boolean = false
     var isDiv : Boolean = false
-    var resultado : Float = 0F
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonMr.setOnClickListener {
-           compCero(numAlmacenado.toString())
+            compCero(numAlmacenado.toString())
         }
 
         binding.buttonPunto.setOnClickListener {
@@ -79,31 +79,41 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonSum.setOnClickListener {
-            primerDig()
+            dig()
             borrarPantalla()
             isSuma = true
         }
 
         binding.buttonRest.setOnClickListener {
-            primerDig()
+            dig()
             borrarPantalla()
             isResta = true
         }
 
         binding.buttonMult.setOnClickListener {
-            primerDig()
+            dig()
             borrarPantalla()
             isMult = true
         }
 
         binding.buttonDiv.setOnClickListener {
-            primerDig()
+            dig()
             borrarPantalla()
             isDiv = true
         }
 
         binding.buttonIgual.setOnClickListener {
-            binding.textView5.setText(resultado.toString())
+            if(isSuma){
+                binding.textView5.text = (dig() + dig()).toString()
+            } else if(isResta){
+                binding.textView5.text = (dig() - dig()).toString()
+            } else if(isMult){
+                binding.textView5.text = (dig() * dig()).toString()
+            } else if(isDiv){
+                binding.textView5.text = (dig() / dig()).toString()
+            } else{
+                Toast.makeText(this, "No has indicado la operacion", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -119,23 +129,5 @@ class MainActivity : AppCompatActivity() {
         binding.textView5.text = ""
     }
 
-    fun primerDig(){
-        if(isSuma){
-            resultado += digito1
-            isSuma = false
-        } else if(isResta){
-            resultado -= digito1
-            isResta = false
-        } else if(isMult){
-            resultado *= digito1
-            isMult = false
-        } else if(isDiv){
-            resultado /= digito1
-            isDiv = false
-        } else{
-            Toast.makeText(this, "No has indicado la operacion", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-
+    fun dig()= binding.textView5.text.toString().toFloat()
 }
