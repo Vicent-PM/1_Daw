@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.cambiovistas'
+    namespace 'com.example.ejdosvistas'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.cambiovistas"
+        applicationId "com.example.ejdosvistas"
         minSdk 24
         targetSdk 33
         versionCode 1
