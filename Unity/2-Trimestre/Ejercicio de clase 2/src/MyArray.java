@@ -30,12 +30,12 @@ public class MyArray<T> {
         return element;
     }
 
-    private void resize(int newSize) {
-        T[] newArray = (T[]) new Object[newSize];
+    private void resize(int tam2) {
+        T[] aResize = (T[]) new Object[tam2];
         for (int i = 0; i <= pointer; i++) {
-            newArray[i] = arrayT[i];
+            aResize[i] = arrayT[i];
         }
-        arrayT = newArray;
-        tam = newSize;
+        arrayT = aResize;
+        tam = tam2;
     }
 }
