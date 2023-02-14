@@ -1,41 +1,33 @@
 public class MyArray<T> {
 
-    private int tam;
-    private T[] arrayT;
+    private T[] array;
     private int pointer;
 
     public MyArray() {
-        tam = 50;
-        arrayT = (T[]) new Object[tam];
+        array = (T[]) new Object[50];
         pointer = -1;
     }
 
-    public void add(T element) {
-        if (pointer == arrayT.length - 1) {
-            resize(tam * 2);
+    public void add(T item) {
+        if (pointer == array.length - 1) {
+            resize();
         }
-        pointer++;
-        arrayT[pointer] = element;
+        array[++pointer] = item;
     }
 
     public T remove() {
-        if (pointer == -1) {
-            return null;
+        if (pointer < 0) {
+            throw new ArrayIndexOutOfBoundsException();
         }
-        T element = arrayT[pointer];
-        pointer--;
-        if (pointer < tam / 4) {
-            resize(tam / 2);
-        }
-        return element;
+        T nBorrado = array[pointer--];
+        return nBorrado;
     }
 
-    private void resize(int tam2) {
-        T[] aResize = (T[]) new Object[tam2];
-        for (int i = 0; i <= pointer; i++) {
-            aResize[i] = arrayT[i];
+    private void resize() {
+        T[] array2 = (T[]) new Object[array.length * 2];
+        for (int i = 0; i < array.length; i++) {
+            array2[i] = array[i];
         }
-        arrayT = aResize;
-        tam = tam2;
+        array = array2;
     }
 }
