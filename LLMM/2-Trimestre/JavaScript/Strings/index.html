@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+    <script>
+        // let texto = prompt("Introduce un texto");
+        // if(texto == texto.toUpperCase()){
+        //     alert("El texto es solo en mayuscula");
+        // } else if(texto == texto.toLowerCase()){
+        //     alert("El texto es solo en minuscula");
+        // } else{
+        //     alert("El texto esta mezclado");
+        // }
+    </script>
+    <!-- Ejercicio 2 -->
+    <script>
+        // function ucFirst (texto){
+        //     return texto.charAt(0).toUpperCase() + texto.slice(1);
+        // }
+
+        // let texto = prompt("Introduce una palabra");
+        // alert(ucFirst(texto));
+    </script>
+    <!-- Ejercicio 3 -->
+    <script>
+        // function checkSpam (str){
+        //     let minusStr = str.toLowerCase()
+        //     return minusStr.includes("viagra") || minusStr.includes("xxx")
+        // }
+
+        // let palabra = prompt("Introduce una palabra")
+        // if(checkSpam(palabra)){
+        //     alert("Contiene SPAM")
+        // } else{
+        //     alert("No contiene SPAM")
+        // }
+    </script>
+    <!-- Ejercicio 4 -->
+    <script>
+        // function truncate(str, maxlength) {
+        //     if(str.length > maxlength){
+        //         return str.substr(0, maxlength) + "..."
+        //     }
+        // }
+
+        // let palabra = prompt("Introduce una palabra")
+        // alert(truncate(palabra, 5))
+    </script>
+    <!-- Ejercicio 5 -->
+    <script>
+        // let str = ""
+        // let str2
+
+        // while (true) {
+        //     str2 = prompt("Introduce una cadena")
+        //     if(str2 === null){
+        //         break
+        //     }
+        //     str += str2 + "-"
+        // }
+
+        // alert(str)
+    </script>
+    <!-- Ejercicio 6 -->
+    <script>
+        // function compA (str){
+        //     let minusStr = str.toLowerCase()
+        //     let contador = 0
+
+        //     for (let i = 0; i < minusStr.length; i++) {
+        //         if(minusStr[i] == "a"){
+        //             contador += 1
+        //         }
+        //     }
+            
+        //     return "Contiene la letra a " + contador + " veces"
+        // }
+
+        // let texto = prompt("Introduce un texto")
+        // alert(compA(texto))
+    </script>
+    <!-- Ejercicio 7 -->
+    <script>
+        // function compA (str){
+        //     let minusStr = str.toLowerCase()
+
+        //     if(minusStr.includes("a")){
+        //         document.write("Contiene la vocal a <br>")
+        //     }
+
+        //     if(minusStr.includes("e")){
+        //         document.write("Contiene la vocal e <br>")
+        //     }
+
+        //     if(minusStr.includes("i")){
+        //         document.write("Contiene la vocal i <br>")
+        //     }
+
+        //     if(minusStr.includes("o")){
+        //         document.write("Contiene la vocal o <br>")
+        //     }
+
+        //     if(minusStr.includes("u")){
+        //         document.write("Contiene la vocal u <br>")
+        //     }
+
+        // }
+
+        // let texto = prompt("Introduce un texto")
+        // compA(texto)
+    </script>
+    <!-- Ejercicio 8 -->
+    <script>
+        // function compA (str){
+        //     let minusStr = str.toLowerCase()
+        //     let contador = 0
+
+        //     for (let i = 0; i < minusStr.length; i++) {
+        //         if(minusStr[i] == "a" || minusStr[i] == "e" || minusStr[i] == "i" || minusStr[i] == "o" || minusStr[i] == "u"){
+        //             contador += 1
+        //         }
+        //     }
+            
+        //     return "Contiene " + contador + " vocales"
+        // }
+
+        // let texto = prompt("Introduce un texto")
+        // alert(compA(texto))
+    </script>
+    <!-- Ejercicio 9 -->
+    <script>
+        // function compA (str){
+        //     let minusStr = str.toLowerCase()
+        //     let contadorA = 0
+        //     let contadorE = 0
+        //     let contadorI = 0
+        //     let contadorO = 0
+        //     let contadorU = 0
+
+        //     for (let i = 0; i < minusStr.length; i++) {
+        //         if(minusStr[i] == "a"){
+        //             contadorA += 1
+        //         } else if(minusStr[i] == "e"){
+        //             contadorE += 1
+        //         } else if(minusStr[i] == "i"){
+        //             contadorI += 1
+        //         } else if(minusStr[i] == "o"){
+        //             contadorO += 1
+        //         } else if(minusStr[i] == "u"){
+        //             contadorU += 1
+        //         }
+        //     }
+            
+        //     document.write("Contiene la a " + contadorA + " veces <br>")
+        //     document.write("Contiene la e " + contadorE + " veces <br>")
+        //     document.write("Contiene la i " + contadorI + " veces <br>")
+        //     document.write("Contiene la o " + contadorO + " veces <br>")
+        //     document.write("Contiene la u " + contadorU + " veces <br>")
+        // }
+
+        // let texto = prompt("Introduce un texto")
+        // compA(texto)
+    </script>
+    <!-- Ejercicio 10 -->
+    <script>
+        let texto = prompt("Introduce una cadena de texto")
+        let texto2 = ""
+
+        for (let i = 0; i < texto.length; i++) {
+            if(i == 0){
+                texto2 = texto[i]
+            } else{
+                texto2 += ("-" + texto[i])
+            }
+        }
+
+        alert(texto2)
+    </script>
+    <!-- Ejercicio 11 -->
+    <script>
+        // let texto = prompt("Introduce una cadena de texto")
+        // let texto2 = ""
+
+        // if(texto.indexOf("(") === -1){
+        //     texto2 = ""
+        // } else if(texto.indexOf(")") === -1){
+        //     texto2 = texto.substring(texto.indexOf("(") + 1)
+        // } else{
+        //     texto2 = texto.substring(texto.indexOf("(") + 1, texto.indexOf(")"))
+        // }
+
+        // alert(texto2)
+    </script>
+    <!-- Ejercicio 12 -->
+    <script>
+        // let str = prompt("Introduce una cadena de texto")
+
+        // for (let i = str.length - 1; i >= 0; i--) {
+        //     document.write(str[i])
+        // }
+    </script>
+    <!-- Ejercicio 13 -->
+    <script></script>
+    <!-- Ejercicio 14 -->
+    <script>
+        // let texto = prompt("Introduce un texto").toLowerCase()
+        // var arrayVocales = ["a", "e", "i", "o", "u"]
+        // let posicion = -1
+
+        // for (let i = 0; i < texto.length; i++) {
+        //     if(arrayVocales.includes(texto[i])){
+        //         posicion = i
+        //         break
+        //     }
+        // }
+
+        // if(posicion != -1){
+        //     document.write("La vocal se encuentra en la posicion " + posicion)
+        // } else{
+        //     document.write("No hay vocal en el texto")
+        // }
+    </script>
+    <!-- Ejercicio 15 -->
+    <script></script>
+
+</body>
+
+</html>
