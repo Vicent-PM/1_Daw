@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD 7. Relación de ejercicios - Arrays</title>
+</head>
+<body>
+    <!-- Ejercicio 1 -->
+    <script>
+        // let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+
+        // for (let i = 0; i < meses.length; i++) {
+        //     console.log(meses[i] + " esta en el indice " + i + " dentro de " + meses.join(","))
+        // }
+    </script>
+    <!-- Ejercicio 2 -->
+    <script>
+        // function letraDNI(numDNI){
+        //     let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+        //     let dni = numDNI % 23
+
+        //     if(numDNI > 0 && dni < 99999999){
+        //         return letras[dni]
+        //     } else{
+        //         return ""
+        //     }
+        // }
+
+        // let numDNI = +prompt("Introduce el numero del dni")
+        // console.log(letraDNI(numDNI))
+    </script>
+
+    <!-- Ejericio 3 -->
+    <script>
+        // let nombres = []
+        // let edad = []
+
+        // for (let i = 0; i < 3; i++) {
+        //     nombres[i] = prompt("Introduce el nombre " + (i+1))
+        //     edad[i] = +prompt("Introduce la edad de " + nombres[i])
+        // }
+
+        // let mayor = edad[0]
+
+        // for (let j = 1; j < edad.length; j++) {
+        //     if(edad[j] > mayor){
+        //         mayor = edad[j]
+        //     }
+        // }
+
+        //     console.log("El mayor de los 3 es " + nombres[edad.indexOf(mayor)])
+    </script>
+    <!-- Ejercicio 4 -->
+    <script>
+        // function letraDNI(numDNI){
+        //     let letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+        //     let dni = numDNI % 23
+
+        //     if(!isNaN(numDNI) && numDNI > 0 && numDNI < 99999999){
+        //         alert(letras[dni])
+        //     } else{
+        //         alert("Introduce un numero valido")
+        //     }
+        // }
+
+        // let numDNI = 0
+
+        // while(numDNI !== null){
+        //     numDNI = +prompt("Introduce el numero del dni")
+        //     letraDNI(numDNI)
+        // }
+    </script>
+    <!-- Ejercicio 5 -->
+    <script>
+        // let musica = ["Jazz", "Blues"]
+        // musica.push("Rock-n-Roll")
+
+        // let central = Math.floor((musica.length - 1) / 2)
+
+        // musica[central] = "Clasicos"
+
+        // console.log(musica[0])
+        // musica.shift()
+
+        // musica.unshift("Reggae")
+        // musica.unshift("Rap")
+
+        // console.log(musica)
+    </script>
+    <!-- Ejercicio 6 -->
+    <script>
+        // let quiniela = []
+        // let resultados = [1, "X", 2]
+
+        // for (let i = 0; i < 14; i++) {
+        //     quiniela[i] = resultados[Math.floor(Math.random() * 3)]
+        // }
+
+        // console.log(quiniela)
+    </script>
+    <!-- Ejercicio 7 -->
+    <script>
+        // let quiniela = []
+        // let resultados = [1, 1, 1, 1, 1, 1, "X", "X", "X", 2]
+
+        // for (let i = 0; i < 14; i++) {
+        //     quiniela[i] = resultados[Math.floor(Math.random() * 10)]
+        // }
+
+        // console.log(quiniela)
+    </script>
+    <!-- Ejercicio 8 -->
+    <script>
+        function range(min, max, paso) {
+            let array = []
+
+            
+                for (let i = min; i <= max; i + paso) {
+                    array[i] = i
+                }
+                return array
+           
+            
+        }
+
+        console.log(range(1, 10, 1))
+
+    </script>
+    <!-- Ejercicio 9 -->
+    <!-- Ejercicio 10 -->
+    <!-- Ejercicio 11 -->
+    <!-- Ejercicio 12 -->
+    <!-- Ejercicio 13 -->
+
+
+</body>
+</html>
