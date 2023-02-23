@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojetos-JavaScript</title>
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+    <!-- 
+        Crea un objeto vacio
+        Agrega la propiedad nombre con el valor Jose
+        Agrega la propiedad apellido con el valor Rodriguez
+        Cambia el valor de nombre a Andres
+        Elimina la porpiedad nombre del objeto y comprueba que ya no esta
+        Nos muestre por pantalla los datos del usuario
+    -->
+    <!-- <script>
+        let usuario = {}
+
+        usuario.nombre = "Jose"
+        usuario.apellido = "Rodriguez"
+        console.log(usuario)
+
+        usuario.nombre = "Andres"
+        console.log(usuario)
+
+        delete usuario.nombre
+        console.log(usuario)
+    </script> -->
+
+    <!-- Ejercicio 2 -->
+    <!-- 
+        Tenemos un objeto que almacena los salarios de nuestro equipo de trabajadores:
+        let salarios = {
+        John: 100,
+        Ann: 160,
+        Pete: 130
+        }
+        Escribe el código para sumar todos los salarios y almacenar el resultado en la variable sum. En el ejemplo de arriba nos debería dar 390.
+        Si salarios está vacío entonces el resultado será 0.
+     -->
+    <script>
+        // let salarios = {
+        //     John: 100,
+        //     Ann: 160,
+        //     Pete: 130
+        // }
+
+        // let sum = 0
+
+        // for(let empleado in salarios){
+        //     sum += salarios[empleado]
+        // }
+
+        // console.log(sum)
+    </script>
+
+    <!-- Ejercicio 3 -->
+
+    <!-- 
+        Crea una función multiplyNumeric(obj) que multiplique todas las propiedades numéricas de
+        obj por 2.
+        Por ejemplo:
+        // Antes de la llamada
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "Mi menú"
+        };
+        multiplyNumeric(menu);
+        // Después de la llamada
+        menu = {
+            width: 400,
+            height: 600,
+            title: "Mi menú"
+        };
+        Nota: multiplyNumeric no necesita devolver nada. Debe modificar el objeto original.
+    -->
+
+    <script>
+        // function multiplyNumeric(obj){
+        //     for(let element in obj){
+        //         if(typeof obj[element] == "number"){
+        //             obj[element] *= 2
+        //         }
+        //     }
+        // }
+
+        // let menu = {
+        //     width: 200,
+        //     heigth: 300,
+        //     title: "Mi menu"
+        // }
+
+        // multiplyNumeric(menu)
+
+        // console.log(menu)
+        
+    </script>
+
+    <!-- Ejercicio 4 -->
+    <!-- 
+        Crea un objeto calculator con tres métodos:
+
+        read() pide dos valores y los almacena como propiedades de objeto.
+        sum() devuelve la suma de los valores almacenados.
+        mul() multiplica los valores almacenados y devuelve el resultado.
+     -->
+    <script>
+        // let calculator = {
+        //     num1: 0,
+        //     num2: 0,
+
+        //     read: function () {
+        //         this.num1 = +prompt("Introduce el primer numero")
+        //         this.num2 = +prompt("Introduce el segundo numero")
+        //     },
+
+        //     sum: function () {
+        //         return this.num1 + this.num2
+        //     },
+
+        //     mul: function () {
+        //         return this.num1 * this.num2
+        //     }
+        // }
+
+        // calculator.read()
+        // console.log(calculator.sum())
+        // console.log(calculator.mul())
+
+    </script>
+    <!-- Ejericico 5 -->
+    <script>
+        let john = { name: "John", surname: "Smith", id: 1 }
+        let pete = { name: "Pete", surname: "Hunt", id: 2 }
+        let mary = { name: "Mary", surname: "Key", id: 3 }
+
+        let users = [john, pete, mary]
+        let names = users.map(x => ({
+            name: x.name,
+        }))
+        console.log(names)
+    </script>
+    <!-- Ejercicio 6 -->
+    <script>
+        let john = { name: "John", surname: "Smith", id: 1}
+        let pete = { name: "Pete", surname: "Hunt", id: 2}
+        let mary = { name: "Mary", surname: "Key", id: 3}
+
+        let users = [john, pete, mary]
+        let usersMapped = users.map (x => ({
+            fullname: `${x.name} ${x.surname}`,
+            id: x.id
+        }))
+        console.log(usersMapped)
+    </script>
+    <!-- Ejercicio 7 -->
+    <script>
+        
+    </script>
+</body>
+
+</html>
