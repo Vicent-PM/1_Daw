@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <!-- Vicente Pedraza Montavez -->
+    <!-- Ejercicio 4 -->
+
+    <script>
+        function nombreImagen(url){
+            let arrayUrl = url.split("/")
+            return arrayUrl[arrayUrl.length - 1]
+        }
+
+        var url='https://i.pinimg.com/originals/ca/94/78/ca947819f35acaba3df6fb08bfb5127f.jpg'
+
+        alert(nombreImagen(url))
+    </script>
+</body>
+</html>

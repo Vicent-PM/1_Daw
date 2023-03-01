@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD 7 . Prueba práctica evaluable</title>
+</head>
+<body>
+    <!-- Vicente Pedraza Montavez -->
+    <!-- Ejercicio 1 -->
+    <script>
+        let array = ['a','b','b','d','e','c','d','c']
+        let arrayComp = []
+        let j = 1
+
+        array.sort()
+
+        
+
+        arrayComp[0] = array[0]
+
+        for (let i = 1; i < array.length; i++) {
+            if(array[i] != array[i - 1]){
+                arrayComp[j] = (array[i])
+                j++
+            }
+        }
+
+        alert(arrayComp)
+    </script>
+</body>
+</html>
