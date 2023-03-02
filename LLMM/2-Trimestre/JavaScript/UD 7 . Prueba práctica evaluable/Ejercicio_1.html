@@ -10,24 +10,74 @@
     <!-- Vicente Pedraza Montavez -->
     <!-- Ejercicio 1 -->
     <script>
-        let array = ['a','b','b','d','e','c','d','c']
-        let arrayComp = []
-        let j = 1
+        // let array = ['a','b','b','d','e','c','d','c']
+        // let arrayComp = []
+        // let j = 1
 
-        array.sort()
+        // array.sort()
 
         
 
-        arrayComp[0] = array[0]
+        // arrayComp[0] = array[0]
 
-        for (let i = 1; i < array.length; i++) {
-            if(array[i] != array[i - 1]){
-                arrayComp[j] = (array[i])
-                j++
+        // for (let i = 1; i < array.length; i++) {
+        //     if(array[i] != array[i - 1]){
+        //         arrayComp[j] = (array[i])
+        //         j++
+        //     }
+        // }
+
+        // alert(arrayComp)
+    </script>
+
+    <!-- Codigo JuanLu -->
+    <script>
+        // function filtrarValoresUnicos(arr){
+        //     return arr.filter((valor, indice) => arr.indexOf(valor) == indice)
+        // }
+
+        // let arr = ['a','b','b','d','e','c','d','c']
+        // const valoresUnicos = filtrarValoresUnicos(arr)
+        // alert(valoresUnicos)
+    </script>
+
+    <!-- Codigo Ramon -->
+    <script>
+        // let arr = ['a','b','b','d','e','c','d','c']
+        // let array2 = []
+        // let a = 0
+        // let cont = 0
+
+        // for (let i = 0; i < arr.length; i++) {
+        //     for (let j = 0; j < array2.length; j++) {
+        //         if(arr[i] == array2[j]){
+        //             a++
+        //         }
+        //     }
+        //         if(a == 0){
+        //             document.write(arr[i] + " ")
+        //             array2[cont] = arr[i]
+        //             cont++
+        //         }
+        //         a = 0
+        // }            
+    </script>
+
+    <!-- Codigo Profesor -->
+    <script>
+        let arr = ['a','b','b','d','e','c','d','c']
+        let array2 = []
+
+        function unico(arr){
+            for(let i = 0; i < arr.length; i++){
+                if(!array2.includes(arr[i])){
+                    array2.push(arr[i])
+                }
             }
+            return array2
         }
 
-        alert(arrayComp)
+        alert(unico(arr))
     </script>
 </body>
 </html>

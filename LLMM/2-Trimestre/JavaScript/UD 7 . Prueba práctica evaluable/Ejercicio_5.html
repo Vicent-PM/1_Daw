@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
 </head>
+
 <body>
     <!-- Vicente Pedraza Montavez -->
     <!-- Ejercicio 5 -->
 
     <script>
+        // let arr = ["HolaMundo", "AdiosMundo"];
+
+        // arr[0] = arr[0].split('').reverse().join('').toLocaleLowerCase()
+        // arr[1] = arr[1].split('').reverse().join('').toLocaleLowerCase()
+
+        // alert(arr)
+    </script>
+
+    <!-- Ejercicio Profesor -->
+    <script>
         let arr = ["HolaMundo", "AdiosMundo"];
+        let result = []
 
-        arr[0] = arr[0].split('').reverse().join('').toLocaleLowerCase()
-        arr[1] = arr[1].split('').reverse().join('').toLocaleLowerCase()
+        for(let i = 0; i < arr.length; i++){
+            arr[i] = arr[i].toLowerCase()
+            result[i] = ""
 
-        alert(arr)
+            for(let j = arr[i].length - 1; j >= 0; j--){
+                result[i] += arr[i].charAt(j)
+            }
+        }
+
+        console.log(result)
     </script>
 </body>
+
 </html>
