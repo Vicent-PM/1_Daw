@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UD 7. Ejercicio evaluable funciones</title>
+</head>
+
+<body>
+    <script>
+        function inBetween(a, b) {
+            function isBetween(element) {
+                return element >= a && element <= b;
+            }
+            return isBetween;
+        }
+
+        function inArray(arr) {
+            function isInArray(element) {
+                return arr.indexOf(element) !== -1;
+            }
+            return isInArray;
+        }
+
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+
+        console.log(arr.filter(inBetween(3, 6))); //3,4,5,6
+
+        alert(arr.filter(inArray([1, 2, 10]))); //1,2
+    </script>
+</body>
+
+</html>
