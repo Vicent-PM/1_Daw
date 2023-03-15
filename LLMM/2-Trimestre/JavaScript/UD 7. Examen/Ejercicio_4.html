@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <!-- Ejercicio 4 -->
+    <!-- Vicente Pedraza Montavez -->
+    <script>
+        function filtrarPersonas(personas, anios) {
+            let arrayFiltrado = [] //Creamos un nuevo array para los que saquemos con el filtro
+            let media = 0 
+            for (let i = 0; i < personas.length; i++) {
+                if(personas[i].edad >= anios){ //Aqui estamos recorriendo el array de objetos y añadiendo los objetos a el nuevo array si superan la condicion de la edad
+                    console.log(personas[i])
+                    arrayFiltrado.push(personas[i])
+                }
+            }
+
+            for (let j = 0; j < arrayFiltrado.length; j++) {
+                media += arrayFiltrado[j].edad // Aqui recorremos el nuevo array para sumar todas las edades y sacar una media
+            }
+            media /= arrayFiltrado.length //Dividimos entre el numero de objetos que hay
+            console.log("La edad media del nuevo array es ", parseInt(media)) //Lo mostramos por consola, ademas de convertirlo a int para que no tenga decimales la media
+        }
+
+        const personas = [
+            { nombre: "Ana", edad: 25, profesion: "Ingeniera" },
+            { nombre: "Juan", edad: 30, profesion: "Abogado" },
+            { nombre: "María", edad: 27, profesion: "Médica" },
+            { nombre: "Pedro", edad: 22, profesion: "Estudiante" },
+            { nombre: "Lucía", edad: 35, profesion: "Profesora" }
+        ];
+
+        filtrarPersonas(personas, 27)
+
+    </script>
+</body>
+
+</html>

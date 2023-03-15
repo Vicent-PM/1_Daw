@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <!-- Ejercicio 1 -->
+    <!-- Vicente Pedraza Montavez -->
+    <script>
+        function sacarEsquema(url){
+            let indiceEsquema = url.indexOf(":") //Sacamos el indice del primer : que hay
+            let esquema = url.slice(0, indiceEsquema) // Sacamos una parte de la url desde el caracter 0 hasta la posicion de el primer : 
+            return esquema
+        }
+
+        function sacarHost(url){
+            let arrayUrl = url.split("/")//Separamos la url en un array de strings cada caracter /
+            let host = arrayUrl[2] // Devolvemos la posicion numero 2 del array para obtener el host, el principio de las url es generico por lo que funcionara con todas
+            return host
+        }
+
+        function sacarPath(url){
+            let host = sacarHost(url).length //Sacamos la longitud del host
+            let esquema = sacarEsquema(url).length //sacamos la longitud del esquema
+
+            let path = url.slice(host + esquema + 3) // Sumamos la longitud del host y del esquema, ademas de sumar 3, se lo he sumado porque se pierden tres caracteres con las funciones de antes (://)
+            return path
+        }
+
+        let url = "https://www.dominio.com/descargas/archivo1.pdf"
+
+        console.log("Esquema: ", sacarEsquema(url))
+        console.log("Host: ", sacarHost(url))
+        console.log("Path: ", sacarPath(url))
+    </script>
+</body>
+</html>

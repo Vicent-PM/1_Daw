@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!-- Ejercicio 3 -->
+    <!-- Vicente Pedraza Montavez -->
+    <script>
+        function sacarCadena(arr){
+            let arrCadena = [] //Creamos un nuevo array
+            for (let i = 0; i < arr.length; i++) {
+                if(typeof arr[i] == "string"){
+                    arrCadena.push(arr[i]) //Recorremos el array original y lo añadimos al otro si es de tipo string
+                }
+            }
+
+            return arrCadena
+        }
+
+        function ordenarArray(arr){
+            if(arr[0] > arr[1]){
+                arr.reverse() //Le decimos que se el de la primera posicion es mayor que el de la segunda que el array se de la vuelta lo que lo ordenaria de mayor a menor
+            }
+
+            return arr
+        }
+
+        function eliminarSpam(arr){
+            let arrSpam = [] //Creamos un nuevo array
+            for (let i = 0; i < arr.length; i++) {
+                arrSpam.push(arr[i].replace("spam", "").trim()) //Recorremos el array original y añadimos a el nuevo, reemplazando la palabra spam por vacio y quitando los espacion del inicio y del final de cada palabra
+            }
+            return arrSpam
+        }
+
+
+        var arr = [2, "prueba spam", "a spam escribir algo aqui", 6]
+        console.log(sacarCadena(arr))
+        console.log(ordenarArray(sacarCadena(arr)))
+        console.log(eliminarSpam(ordenarArray(sacarCadena(arr))))
+    </script>
+</body>
+</html>
