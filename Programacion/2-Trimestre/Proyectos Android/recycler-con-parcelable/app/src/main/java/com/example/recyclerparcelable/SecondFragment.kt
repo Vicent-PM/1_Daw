@@ -1,5 +1,6 @@
 package com.example.recyclerparcelable
 
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.view.*
@@ -21,6 +22,7 @@ class SecondFragment : Fragment() {
 
         binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
+
 
     }
 

@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+//        supportActionBar?.title = "Aplicacion"
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -35,5 +39,9 @@ class MainActivity : AppCompatActivity() {
 
     fun changeTitle(title: String?) {
         supportActionBar?.title = title
+    }
+
+    fun hideSupporActionBar() {
+        supportActionBar?.hide()
     }
 }
