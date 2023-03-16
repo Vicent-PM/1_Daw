@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de seleccion DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p id="texto">Texto de ejemplo</p>
+        <button onclick="changeColor('blue')">Azul</button>
+        <button onclick="changeColor('red')">Rojo</button>
+        <div class="mi-clase">Elemento 1</div>
+        <div class="mi-clase">Elemento 2</div>
+        <div class="otra-clase">Elemento 3</div>
+
+        <p>Texto 2 de ejemplo</p>
+
+        <button onclick="contarParrafos()">Contar</button>
+
+        <ul>
+            <li>
+                <a href="#">Opcion 1 </a>
+            </li>
+            <li>
+                <a href="#">Opcion 2 </a>
+            </li>
+            <li>
+                <a href="#">Opcion 3 </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1 id="titulo">Modificacion de contenidos</h1>
+        <p id="inner"></p>
+        <p id="outer"></p>
+        <p id="text"></p>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
