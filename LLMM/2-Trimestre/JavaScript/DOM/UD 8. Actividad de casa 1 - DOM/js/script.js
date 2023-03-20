@@ -1,0 +1,3 @@
+function mostrarTexto(){
+    document.getElementById("texto").textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil reiciendis ad dignissimos sed. Beatae autem deserunt consequuntur totam id, enim quo laboriosam, consectetur inventore ea reiciendis voluptates vero deleniti! Pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil reiciendis ad dignissimos sed. Beatae autem deserunt consequuntur totam id, enim quo laboriosam, consectetur inventore ea reiciendis voluptates vero deleniti! Pariatur!"
+}
