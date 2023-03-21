@@ -11,9 +11,7 @@ public class Calcular {
         this.calcular = calcular;
     }
 
-    public void calculo() {
-        System.out.println("Haciendo la operacion");
-        this.calcular.execute(6, 3);
-        System.out.println("Operacion hecha");
+    public float calculo(float ... terms) {
+       return calcular.execute(terms);
     }
 }

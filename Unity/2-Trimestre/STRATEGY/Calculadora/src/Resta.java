@@ -3,8 +3,16 @@ import Interfaces.Operacion;
 public class Resta implements Operacion {
 
     @Override
-    public void execute(float a, float b) {
-        System.out.println(a - b);
+    public float execute(float ... terms) {
+        float total = terms[0];
+
+        if(terms.length == 0){
+            return 0;
+        }
+        for (int i = 1; i < terms.length; i++) {
+            total -= terms[i];
+        };
+        return total;
     }
 
 }
